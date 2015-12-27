@@ -1,4 +1,4 @@
-## GettingAndCleaningData-Project
+## Accelerometers Data Project
 ####Course Project:
 
 The purpose of this README.md is to give a brief description of this project, its goals and to briefly describe the scripts and their functions towards the dataset.
