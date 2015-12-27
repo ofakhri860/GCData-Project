@@ -11,7 +11,7 @@ This project is an exercise to demonstrate my ability to collect, work with, and
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Addtional information found in CodeBook.md
+#####Addtional information found in CodeBook.md
 
 ####Script:
 Using Rstudio I created a script called run_analysis.R which maniuplated and tidied up the dataset in order to meet the project goals. The script executes in this following order:
