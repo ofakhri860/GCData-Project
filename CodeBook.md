@@ -23,7 +23,7 @@ The output file tidy_data.txt is uploaded for submission and ddply() was used fo
 
 * x_train, y_train, x_test, y_test, subject_train and subject_test are the original untouched data files.
 * x_data, y_data and subject_data resulted in the merger of the data files from above.
-* features file contained the corrected column names for the x_data dataset.
-* activities file contained the same for the y_dataset.
+* features file contained the corrected column names for the x_data set.
+* activities file contained the same for the y_data set.
 * whole_data merges x, y, and subject datasets created and transformed previously into a combined dataset.
 * tidy_data is a table generated from the whole_data dataset and filters the data so only the requested averages are present.
