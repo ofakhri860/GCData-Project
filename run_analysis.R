@@ -29,3 +29,13 @@ features_mean_std <- grep("-(mean|std)\\(\\)", features[, 2])
 x_data <- x_data[, features_mean_std]
 names(x_data) <- features[features_mean_std, 2]
 
+## Step 3: Designate activity names for the activities in the data set
+
+activity_labels <- read.table("C:/DataSet/UCI HAR Dataset/activity_labels.txt")
+
+# Update values with the correct activity names
+y_data[, 1] <- activity_labels[y_data[, 1], 2]
+
+# Edit column name
+names(y_data) <- "activity"
+
