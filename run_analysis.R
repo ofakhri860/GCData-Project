@@ -39,3 +39,11 @@ y_data[, 1] <- activity_labels[y_data[, 1], 2]
 # Edit column name
 names(y_data) <- "activity"
 
+## Step 4: Label the data set with descriptive variable names
+
+# Edit column name
+names(subject_data) <- "subject"
+
+# Merge the x, y, and subject datasets into a single dataset
+final_data <- cbind(x_data, y_data, subject_data)
+
