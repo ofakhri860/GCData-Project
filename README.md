@@ -19,7 +19,7 @@ Using Rstudio I created a script called run_analysis.R which maniuplated and tid
 
 1. Merged the training and the test sets to create one dataset.
 2. Extracted only the measurements on the mean and standard deviation for each measurement. 
-3. Used descriptive activity names for the activities in the dataset.
+3. Designated descriptive activity names for the activities in the dataset.
 4. Labeled the dataset with descriptive variable names. 
 5. Created an independent second dataset with the average of each variable for each activity and each subject.
 
