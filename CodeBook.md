@@ -7,8 +7,6 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 A study collected data from the accelerometers of 30 participants ranging from the ages of 19-48 years. Each volunteer performed the following activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING while wearing Samsung Galaxy S smartphones on their waist, which collected the data. The data collected was split into two sets: one dataset contains data from 70% of the volunteers which was allocated to training data and the other dataset contains the remaining 30% that were allocated to test data.
 
-Additional information can be found here:
-
 ####Script Transformations:
 
 The script run_analysis.R performs the 5 steps as described on the README.md and specifically executes in this order:
