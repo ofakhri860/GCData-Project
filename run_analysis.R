@@ -45,12 +45,12 @@ names(y_data) <- "activity"
 names(subject_data) <- "subject"
 
 # Merge the x, y, and subject datasets into a single dataset
-final_data <- cbind(x_data, y_data, subject_data)
+whole_data <- cbind(x_data, y_data, subject_data)
 
 ##Step 5: Create a second dataset with the average of each variable for each activity and each subject
 
 # Measurements encompass columns 1:66, while 67 & 68 are activity and subject respectively 
-tidy_data <- ddply(final_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
+tidy_data <- ddply(whole_data, .(subject, activity), function(x) colMeans(x[, 1:66]))
 
 # Generate table and file name is called tidy_data.txt
 write.table(tidy_data, "tidy_data.txt", row.name=FALSE)
