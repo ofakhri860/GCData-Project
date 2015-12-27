@@ -17,3 +17,15 @@ subject_test <- read.table("C:/DataSet/UCI HAR Dataset/test/subject_test.txt")
 x_data <- rbind(x_train, x_test)
 y_data <- rbind(y_train, y_test)
 subject_data <- rbind(subject_train, subject_test)
+
+## Step 2: Extract only the measurements on the mean and standard dev. for each measurement
+
+features <- read.table("C:/DataSet/UCI HAR Dataset/features.txt")
+
+# Filter the data without columns with mean() or std() in their names
+features_mean_std <- grep("-(mean|std)\\(\\)", features[, 2])
+
+# Subset the columns & update their names 
+x_data <- x_data[, features_mean_std]
+names(x_data) <- features[features_mean_std, 2]
+
